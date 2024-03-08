@@ -1,0 +1,22 @@
+li {
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+li::after {
+  content: "";
+  position: absolute;
+  bottom: -6px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: yellow; 
+  transition: all 600ms ease;
+  transform: scaleX(0);
+  transform-origin: bottom center;
+}
+
+li:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom center;
+}
