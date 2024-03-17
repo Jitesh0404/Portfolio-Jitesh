@@ -1,9 +1,10 @@
 li {
   position: relative;
+  display: inline-block;
   transition: all 0.3s ease;
 }
 
-li::after {
+li::after{
   content: "";
   position: absolute;
   bottom: -6px;
@@ -19,4 +20,16 @@ li::after {
 li:hover::after {
   transform: scaleX(1);
   transform-origin: bottom center;
+}
+@keyframes animation-menu {
+  0%{
+    top: -400px;
+  }
+  100%{
+    top: 20px;
+  }
+}
+.transition-menu{
+  animation: animation-menu 0.5s ease forwards;
+  /* transition: all 1s ease-in-out; */
 }
