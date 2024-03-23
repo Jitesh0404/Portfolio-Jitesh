@@ -1,12 +1,20 @@
 import Resume from "../../assets/Jitesh-Sharma-Resume.pdf";
 import ShadowContainer from "../CommonComponets/ShadowContainer";
+import profilePhoto from "../../assets/Images/Jitesh.png";
 export default function AboutPage() {
   return (
-    <div id="about" className="h-screen pt-20 flex justify-evenly">
-      <div>
-        <h1 className="text-white text-2xl">Left Side</h1>
+    <div
+      id="about"
+      className="h-screen pt-20 flex justify-evenly gap-10 w-[90%] m-auto"
+    >
+      <div className="flex items-center">
+        <img
+          src={profilePhoto}
+          alt="profile"
+          className="w-[400px] md:w[900px] h-[400px] md:h-full object-cover rounded-xl border"
+        />
       </div>
-      <div>
+      <div className="">
         <ShadowContainer
           title="About Me"
           shadowText="About"
@@ -15,30 +23,44 @@ export default function AboutPage() {
         />
         <div className="flex gap-10 mt-20">
           <div className="flex flex-col gap-4">
-            <h2 className="text-[#FFFFFF] text-base font-black">Name: </h2>
-            <h2 className="text-[#FFFFFF] text-base font-black">
+            <h2 className="text-[#FFFFFF] text-sm md:text-base font-black">
+              Name:{" "}
+            </h2>
+            <h2 className="text-[#FFFFFF] text-sm md:text-base font-black">
               Date of birth:{" "}
             </h2>
-            <h2 className="text-[#FFFFFF] text-base font-black">Address: </h2>
-            <h2 className="text-[#FFFFFF] text-base font-black">ZIP Code: </h2>
-            <h2 className="text-[#FFFFFF] text-base font-black">Email: </h2>
-            <h2 className="text-[#FFFFFF] text-base font-black">Phone: </h2>
+            <h2 className="text-[#FFFFFF] text-sm md:text-base font-black">
+              Address:{" "}
+            </h2>
+            <h2 className="text-[#FFFFFF] text-sm md:text-base font-black">
+              ZIP Code:{" "}
+            </h2>
+            <h2 className="text-[#FFFFFF] text-sm md:text-base font-black">
+              Email:{" "}
+            </h2>
+            <h2 className="text-[#FFFFFF] text-sm md:text-base font-black">
+              Phone:{" "}
+            </h2>
           </div>
           <div className="flex flex-col gap-4">
-            <h4 className="text-[#999999] text-base font-black">
+            <h4 className="text-[#999999] text-sm md:text-sm md:text-base font-black">
               Jitesh Sharma
             </h4>
-            <h4 className="text-[#999999] text-base font-black">
+            <h4 className="text-[#999999] text-sm md:text-base font-black">
               04 April 2003
             </h4>
-            <h4 className="text-[#999999] text-base font-black">
+            <h4 className="text-[#999999] text-sm md:text-base font-black">
               Jaipur,Rajasthan
             </h4>
-            <h4 className="text-[#999999] text-base font-black">302013</h4>
-            <h4 className="text-[#999999] text-base font-black">
+            <h4 className="text-[#999999] text-sm md:text-base font-black">
+              302013
+            </h4>
+            <h4 className="text-[#999999] text-sm md:text-base font-black">
               jitesh04sharma@gmail.com
             </h4>
-            <h4 className="text-[#999999] text-base font-black">9929878107</h4>
+            <h4 className="text-[#999999] text-sm md:text-base font-black">
+              9929878107
+            </h4>
           </div>
         </div>
         <div className="flex gap-2 mt-10">

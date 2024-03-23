@@ -39,7 +39,7 @@ function Navbar() {
   const handleMouseOver = () => {};
   return (
     <nav className="w-full justify-between pt-4 fixed bg-black z-10 py-4">
-      <div className="flex items-center px-20 lg:p-0 justify-between sm:w-full md:w-full lg:w-[70%] m-auto">
+      <div className="flex items-center px-20 lg:p-0 justify-between sm:w-full md:w-full lg:w-[80%] m-auto">
         <a href="#home" className="text-white text-2xl font-extrabold">
           Jitesh
         </a>
