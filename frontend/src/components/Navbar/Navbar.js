@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { TfiMenu } from "react-icons/tfi";
+import { RiCloseLine } from "react-icons/ri";
 import { useMediaQuery } from "react-responsive";
 import "./Navbar.css";
 function Navbar() {
@@ -7,6 +8,7 @@ function Navbar() {
   console.log("navSelected ", navSelected);
   const [isMenuActive, setIsMenuActive] = useState(false);
   console.log("isMenuActive ", isMenuActive);
+  // const [isMenuActive,setIsMenuActive] = useState(true);
   const isMediumDevice = useMediaQuery({ query: "(min-width: 768px)" });
   useEffect(() => {
     if (isMediumDevice) {
@@ -141,7 +143,8 @@ function Navbar() {
           onClick={() => setIsMenuActive(!isMenuActive)}
         >
           <div className="flex flex-row justify-center items-center gap-2 font-bold">
-            <TfiMenu color="white" size={20} className="cursor-pointer" />
+            {!isMenuActive ? <TfiMenu color="white" size={20} className="cursor-pointer" /> : 
+            <RiCloseLine color="white" size={25} className="cursor-pointer"/>}
             <h4 className="text-gray-500 text-lg uppercase">Menu</h4>
           </div>
         </button>

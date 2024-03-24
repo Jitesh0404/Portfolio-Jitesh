@@ -24,7 +24,15 @@ export default function SkillsPage() {
           shadowText="Skills"
           text="Learning to code is useful no matter what your career ambitions are."
         />
-        <div className="flex justify-around items-center">
+        <div className="flex flex-wrap justify-around items-center gap-10">
+          <div className="flex flex-col gap-4 justify-center items-center">
+            <h2 className="text-white font-semibold text-2xl">React Native</h2>
+            <CircularProgressCountUp
+              skillPercentage={90}
+              btnText={"Measure React Native"}
+            />
+            {/* <h3 className="text-[#FFBD39] font-bold">(1 Year Experience)</h3> */}
+          </div>
           <div className="flex flex-col gap-4 justify-center items-center">
             <h2 className="text-white font-semibold text-2xl">Frontend</h2>
             <CircularProgressCountUp
