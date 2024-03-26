@@ -6,9 +6,9 @@ import { motion } from "framer-motion";
 import Resume from "../../assets/Jitesh-Sharma-Resume.pdf";
 export default function ResumePage() {
   return (
-    <div id="resume" className="h-screen pt-20">
-      <div className="w-[80%] m-auto">
-        <div className="w-[60%] m-auto">
+    <div id="resume">
+      <div className="w-[80%] m-auto mt-20">
+        <div className="w-[100%] md:w-[80%] m-auto">
           <ShadowContainer
             title="Resume"
             shadowText="Resume"
@@ -25,9 +25,9 @@ export default function ResumePage() {
             y: 0,
             transition: { duration: 1 },
           }}
-          viewport={{ once: false, amount: 0.8 }}
+          viewport={{ once: true, amount: 0.8 }}
         >
-          <div className="flex flex-wrap justify-evenly mt-10 gap-6">
+          <div className="flex flex-col md:flex-row flex-wrap justify-evenly mt-10 gap-6">
             {ResumeContent.map((data) => (
               <ResumeComponent
                 duration={data.duration}

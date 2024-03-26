@@ -8,8 +8,8 @@ import { GoProjectRoadmap } from "react-icons/go";
 import { motion } from "framer-motion";
 export default function ServicesPage() {
   return (
-    <div id="services" className="pt-20 h-screen">
-      <div className="mt-20">
+    <div id="services" className="mt-40">
+      <div className="mt-20 w-[90%] m-auto">
         <ShadowContainer
           title="Services "
           shadowText="Services"
@@ -25,9 +25,9 @@ export default function ServicesPage() {
             y: 0,
             transition: { duration: 1 },
           }}
-          viewport={{ once: false, amount: 0.8 }}
+          viewport={{ once: true, amount: 0.8 }}
         >
-          <div className="flex flex-wrap mt-20 justify-start items-center gap-10 w-[60%] m-auto">
+          <div className="flex flex-wrap mt-20 justify-start items-center gap-10 w-[80%] m-auto">
             <Service
               Icon={
                 <MdSendToMobile

@@ -5,23 +5,25 @@ export default function AboutPage() {
   return (
     <div
       id="about"
-      className="h-screen pt-20 flex justify-evenly gap-10 w-[90%] m-auto"
+      className="flex flex-col justify-evenly gap-10 w-[90%] m-auto"
     >
-      <div className="flex items-center">
-        <img
-          src={profilePhoto}
-          alt="profile"
-          className="w-[400px] md:w[900px] h-[400px] md:h-full object-cover rounded-xl border"
-        />
-      </div>
-      <div className="">
         <ShadowContainer
           title="About Me"
           shadowText="About"
           text="I see the world in lines of code, and my passion lies in crafting
         solutions that transform ideas into reality."
         />
-        <div className="flex gap-10 mt-20">
+        <div className="flex flex-col md:flex-row m-auto justify-center gap-10 w-[100%]">
+
+      {/* <div className="flex items-center"> */}
+        <img
+          src={profilePhoto}
+          alt="profile"
+          className="w-[100%] md:w-[60%] h-[400px] md:h-full object-cover rounded-xl border"
+        />
+      {/* </div> */}
+      <div className="">
+        <div className="flex gap-10 mt-0 md:mt-20">
           <div className="flex flex-col gap-4">
             <h2 className="text-[#FFFFFF] text-sm md:text-base font-black">
               Name:{" "}
@@ -75,6 +77,7 @@ export default function AboutPage() {
           </a>
         </button>
       </div>
+        </div>
     </div>
   );
 }
